@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Imperial+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/buy.css">
+</head>
+<body>
+    
+        <header>
+        <h1>Online Shopping</h1>  
+        <div class="loggeduser" style="text-align:right;font-size:larger;font-family:Century Schoolbook;"> 
+            <span class="productRefresh">All Products</span>
+            <i class="fa-solid fa-cart-shopping mycartBtn" style="margin-right: 30px;"></i>
+            <span class="logout" style="font-size:larger;font-family:Century Schoolbook;">Logout</span>
+        </div>
+            </header>
+        
+            <div class="order">
+                <h1>Place Your Order Here</h1>
+                <div class="order-product">
+                <div class="product-list">
+                    <h3>Product List</h3>
+                    
+                </div>
+                
+                    <div class="personal-detail">
+                        <label for="Name">Name</label>
+                        <input type="text" id="c-name" placeholder="Name" required>
+                        <label for="phone">Phone Number</label>
+                        <input type="phone" id="c-phone" placeholder="0000000000" required minlength="10" maxlength="10"><br>
+                        <label for="email">Email</label>
+                        <input type="email" id="c-mail" placeholder="Email" required>
+                        <label for="city">City</label>
+                        <input type="text" id="c-city" placeholder="City" required>
+                        <label for="state">State</label>
+                        <input type="text" id="c-state" placeholder="State" required><br>
+                        <label for="add">Address</label><br>
+                        <textarea rows="10" cols="90" id="c-add"></textarea><br>
+                        <label for="cars">Mode of Payment:</label>
+
+                        <select name="Mode" id="mode">
+                        <option value="cod">Cash on Delivery</option>
+                        <option value="UPI">UPI Payment</option>
+
+                        </select><br>
+                        <button class="place-btn">Place Order</button>
+
+                    </div>
+
+                </div>
+                </div>
+            </div>
+    
+    <div class="final-order">
+        <h1 style="font-size: 50px">Order Summmary</h1>
+        <h2>Order ID</h2>
+        <h2>Name</h2>
+        <h3>email</h3>
+        <p>Address</p>
+        <p>City</p>
+        <h3>Estimated delivery</h3>
+        <p>Mode of Payment</p>
+        <h1>Total</h1>
+        <button class="close">Close</button>
+    </div>
+    <!-- <script src="js/customer.js"></script> -->
+    <script src="js/buy.js"></script>
+</body>
+</html>

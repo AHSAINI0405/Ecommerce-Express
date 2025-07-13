@@ -1,0 +1,143 @@
+*
+{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.loggeduser {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.loggeduser span, .loggeduser i {
+    cursor: pointer;
+    color: #fff;
+}
+
+.loggeduser span:hover, .loggeduser i:hover {
+    color: #ffcc00;
+}
+
+
+#update {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+th {
+  background-color: #f2f2f2;
+}
+button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+input {
+  padding: 8px;
+  margin: 5px;
+}
+.customer{
+  background-color: #ffcc00;
+}
+.allProduct {
+  margin-top: 70px;
+  background-color: #b48e8e;
+  width: 80%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+}
+.product-box {
+  
+  padding: 30px;
+  box-shadow: 0px 2px 10px 2px white;
+  button {
+    color: rgb(24, 156, 222);
+    font-size: large;
+    padding: 10px;
+  }
+}
+.allProduct {
+ padding: 20px;
+}
+
+.product-box{
+    padding: 10px;
+    place-items: center;
+    /* border: 5px solid red; */
+    img{
+        height: 200px;
+        width: 200px;
+    }
+}
+.pages{
+  padding: 20px;
+  display:flex;
+  font-size: 30px;
+  justify-content: center;
+  color:green;
+  font-weight: 900;
+  button{
+    color:red;
+    font-size: large;
+    font-weight: 900;
+    border: none;
+  }
+}
+.pages button:hover{
+  background-color: black;
+  color: white;
+}
+
+
+.cart{
+    border:5px solid green;
+}
+.productRefresh:hover{
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  
+}
+.logout:hover
+{
+   font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <center>
+        <header>
+        <h1>Online Shopping</h1>  
+        <div class="loggeduser" style="text-align:right;font-size:larger;font-family:Century Schoolbook;"> 
+            <span class="productRefresh">All Products</span>
+            <i class="fa-solid fa-cart-shopping mycartBtn" style="margin-right: 30px;"></i>
+            <span class="logout" style="font-size:larger;font-family:Century Schoolbook;">Logout</span>
+        </div>
+        </header>
+    <div class="mycart">
+        
+        <h1>My Cart</h1>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Product Name</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Total Price</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="mycart">
+                
+            </tbody>
+            
+        </table>
+        <a href="./buy.html"><button>Buy Now</button></a>
+    </div>
+</center>
+<!-- <i class="fa-solid fa-trash-slash fa-bounce" style="color: #0c8ced;"></i> -->
+    <script src="js/cart.js">
+        
+    </script>
+</body>
+</html>

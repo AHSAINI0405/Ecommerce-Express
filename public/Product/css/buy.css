@@ -1,0 +1,245 @@
+/* *{
+    padding: 0;
+    margin:0;
+}
+.order{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.product-list{
+    border: 2px solid green;
+    text-align: justify;
+}
+.product{
+border: 2px solid red;
+display: flex;
+}
+.prod-img img{
+    width:140px;
+    padding: 20px;
+}
+.product-detail{
+    
+}
+.g-total{
+    font-size: 25px;
+    text-align: right;
+}
+p{
+    font-size: 20px;
+} */
+ /* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Century Schoolbook', serif;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.loggeduser {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.loggeduser span, .loggeduser i {
+    cursor: pointer;
+    color: #fff;
+}
+
+.loggeduser span:hover, .loggeduser i:hover {
+    color: #ffcc00;
+}
+
+/* Main Order Section */
+.order {
+    padding: 30px;
+    background-color: #f9f9f9;
+    /* display: none; */
+    position: relative;
+}
+
+.order h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Product List */
+.order-product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.product-list {
+    border: 2px solid #4CAF50;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    background-color: #fdfdfd;
+}
+
+.product-list h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.product {
+    border: 2px solid #e74c3c;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.prod-img img {
+    width: 140px;
+    padding: 15px;
+}
+
+.product-detail {
+    padding: 10px 20px;
+}
+
+.product-detail h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.product-detail h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.product-detail button {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.product-detail button:hover {
+    color: #c0392b;
+}
+
+/* Grand Total */
+.g-total {
+    font-size: 25px;
+    text-align: right;
+    padding: 15px 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Personal Details Form */
+.personal-detail {
+    padding: 20px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    background-color: #fefefe;
+}
+
+.personal-detail label {
+    display: block;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.personal-detail input,
+.personal-detail textarea ,select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.personal-detail button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.personal-detail button:hover {
+    background-color: #388e3c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .prod-img img {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .product-detail {
+        padding: 10px;
+    }
+
+    .personal-detail textarea {
+        width: 100%;
+    }
+}
+
+/* Final Order */
+.final-order
+{
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 170px;
+    left: 25%;
+    
+     display:none;
+    /*display:flex; */
+    flex-direction: column;
+    padding: 30px;
+    row-gap: 20px;
+    place-items: center;
+    background-color: rgba(255, 182, 193, 0.728);
+    
+    button{
+        padding: 10px;
+        width: fit-content;
+        font-size: large;
+    }
+}

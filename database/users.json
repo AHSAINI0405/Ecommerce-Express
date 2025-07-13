@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1752321484473,
+    "username": "Amit",
+    "email": "amit@gmail.com",
+    "password": "12345678",
+    "role": "User"
+  },
+  {
+    "id": 1752375865778,
+    "username": "Happy",
+    "email": "happysaini4522@gmail.com",
+    "password": "123456789",
+    "role": "User"
+  }
+]

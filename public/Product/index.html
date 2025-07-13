@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <center>
+        <h1>Product Management</h1>
+        Product Name: <input type="text" placeholder="Enter the Product Name" id="pname" required>
+        Product Price: <input type="number" placeholder="00" id="price" required>
+        Product Quantity: <input type="number" placeholder="00" id="quantity" required><br/>
+        <button id="submit">Add Product</button>
+        
+        <table border="1" id="product_table">
+            <thead>
+                <tr>
+                    <th>Sr.No.</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+                <!-- Products will be loaded here -->
+            </tbody>
+        </table>
+    </center>
+    
+    <div id="update">
+        <h2>Update Product</h2>
+        Product Name: <input type="text" id="up_pname" required>
+        Product Price: <input type="number" id="up_price" required>
+        Product Quantity: <input type="number" id="up_quantity" required><br/>
+        <button id="updating">Update</button>
+        <button id="cancel">Cancel</button>
+        <input type="hidden" id="up_id">
+    </div>
+
+    <script src="js/script.js">
+        
+    </script>
+</body>
+</html>

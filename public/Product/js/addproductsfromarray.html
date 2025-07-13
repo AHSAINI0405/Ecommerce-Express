@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+<script>
+let products = JSON.parse(localStorage.getItem('products')) || [];
+products = [
+  { id: 1, name: "Laptop", price: 55000, quantity: 5 },
+  { id: 2, name: "Smartphone", price: 25000, quantity: 8 },
+  { id: 3, name: "Tablet", price: 18000, quantity: 6 },
+  { id: 4, name: "Bluetooth Speaker", price: 3500, quantity: 9 },
+  { id: 5, name: "Wireless Mouse", price: 700, quantity: 7 },
+  { id: 6, name: "Keyboard", price: 1200, quantity: 4 },
+  { id: 7, name: "Smartwatch", price: 7000, quantity: 6 },
+  { id: 8, name: "Monitor", price: 15000, quantity: 3 },
+  { id: 9, name: "External Hard Drive", price: 4500, quantity: 5 },
+  { id: 10, name: "Webcam", price: 2000, quantity: 2 },
+  { id: 11, name: "USB Flash Drive", price: 500, quantity: 10 },
+  { id: 12, name: "Gaming Chair", price: 9500, quantity: 2 },
+  { id: 13, name: "Router", price: 2200, quantity: 6 },
+  { id: 14, name: "LED Desk Lamp", price: 1200, quantity: 4 },
+  { id: 15, name: "Graphic Tablet", price: 4500, quantity: 3 },
+  { id: 16, name: "Power Bank", price: 1200, quantity: 7 },
+  { id: 17, name: "Earphones", price: 800, quantity: 8 },
+  { id: 18, name: "Printer", price: 8500, quantity: 2 },
+  { id: 19, name: "Projector", price: 23000, quantity: 1 },
+  { id: 20, name: "Microphone", price: 3000, quantity: 5 },
+  { id: 21, name: "VR Headset", price: 15000, quantity: 2 },
+  { id: 22, name: "Gaming Console", price: 35000, quantity: 3 },
+  { id: 23, name: "Smart TV", price: 42000, quantity: 4 },
+  { id: 24, name: "Washing Machine", price: 18000, quantity: 2 },
+  { id: 25, name: "Refrigerator", price: 28000, quantity: 3 },
+  { id: 26, name: "Air Conditioner", price: 36000, quantity: 1 },
+  { id: 27, name: "Electric Kettle", price: 1500, quantity: 7 },
+  { id: 28, name: "Hair Dryer", price: 1300, quantity: 6 },
+  { id: 29, name: "Water Purifier", price: 8500, quantity: 2 },
+  { id: 30, name: "Ceiling Fan", price: 3200, quantity: 4 }
+];
+localStorage.setItem("products", JSON.stringify(products));
+</script>
